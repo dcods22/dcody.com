@@ -27,6 +27,53 @@ li{
 	display:block;
 }
 
+input[type="submit"]{
+	margin-right:10px;
+	width:80px;
+    padding: 4px 7px;
+    background: #1b1bc2;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #585858;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="reset"]{
+	margin-right:10px;
+	width:80px;
+    padding: 4px 7px;
+    background: #1b1bc2;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #585858;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button{
+	margin-right:10px;
+	width:80px;
+    padding: 4px 7px;
+    background: #1b1bc2;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #585858;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
 /*******************************Classes**************************************/
 
 .container{
@@ -120,8 +167,6 @@ nav{
 	min-width:1000px;
 }
 
-
-
 .footerContainer{
 	height:auto;
 	width:auto;
@@ -206,3 +251,27 @@ a#next:hover {
 }
 
 .clear {clear:both}
+
+/****************************** Contact *********************************/
+#nameForm{
+	width:300px;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+#email{
+	width:300px;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+#subject{
+	width:300px;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+#message{
+	width:300px;
+	height:300px;
+}
