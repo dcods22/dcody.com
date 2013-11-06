@@ -1,0 +1,208 @@
+/***************************Generals******************************************/
+
+html, body{
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	margin: 0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover{
+	color:#1b1bc2;
+}	
+
+hr{
+	background-color: #dbdbdb;
+}
+
+li{
+	text-decoration:none;
+	display:block;
+}
+
+/*******************************Classes**************************************/
+
+.container{
+	top:0;
+	left:0;
+	width:1000px;
+	min-width:1000px;
+	border-left: 1px solid #dbdbdb;
+	border-right: 1px solid #dbdbdb;
+	height:auto;
+	margin:auto auto auto auto
+}
+
+.nav{
+	width:auto;
+	min-width:100%;
+	padding:0;
+	margin:0;
+	height:80px;
+	/* Chrome 10+,Safari */
+	background : -webkit-linear-gradient(bottom, rgb(45, 60, 156) 04%, rgb(60, 55, 212) 48%);
+
+	/* Firefox 4+ */ 
+	background : -moz-linear-gradient(bottom, rgb(45, 60, 156) 04%, rgb(60, 55, 212) 48%);
+
+	/* Opera */
+	background : -o-linear-gradient(bottom, rgb(45, 60, 156) 04%, rgb(60, 55, 212) 48%);
+
+	/* IE 10+ */
+	background : -ms-linear-gradient(bottom, rgb(45, 60, 156) 04%, rgb(60, 55, 212) 48%); 
+
+	/* W3C */
+	background : -linear-gradient(bottom, rgb(45, 60, 156) 04%, rgb(60, 55, 212) 48%);
+}
+
+.navContainer{
+	height:auto;
+	width:1000px;
+	min-width:1000px;
+	min-height:auto;
+	margin:auto auto auto auto;
+}
+
+.nav a{
+	font-size:27px;
+	margin-top:40px;
+	font-weight:bold;
+	color:#dfdfeb;
+	padding-right:20px;
+}
+
+.nav a:hover{
+	color:#f0f0f5;
+}
+
+nav{
+	padding-top:40px;
+	margin:auto auto auto auto;
+	float:left;
+}
+
+#name{
+	float:left;
+	overflow:hidden;
+	padding-right:30px;
+	padding-top:15px;
+	font-size:30px;
+	color:#dfdfeb;
+}
+
+.socialMedia{
+	padding-top:10px;
+	padding-left:10px;
+	float:right;
+}
+
+.bodyContainer{
+	height:auto;
+	min-height:75%;
+	width:auto;
+	padding-top: 17px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.footer{
+	height:100px;
+	min-height:100px;
+	width:1000px;
+	min-width:1000px;
+}
+
+
+
+.footerContainer{
+	height:auto;
+	width:auto;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.copy{
+	padding-top:70px;
+	float:right;
+}
+
+/************************************slide show***************************/
+#carousel {
+	width:255px;
+	height:290px;	
+	margin:0 auto;
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:250px;
+	height:250px;
+	border:1px solid #ccc;
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+	width:750px;			
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:250px;
+	height:250px;	
+	float:left;
+}
+
+#slides li img {
+	padding:5px;
+}
+
+/* Styling for prev and next buttons */
+#buttons {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttons a {
+	display:block; 
+	width:31px; 
+	height:32px;
+	text-indent:-999em;
+	float:left;
+	outline:0;
+}
+
+a#prev {
+	background:url(arrow.gif) 0 -31px no-repeat; 
+}
+
+a#prev:hover {
+	background:url(arrow.gif) 0 0 no-repeat;
+}
+
+a#next {
+	background:url(arrow.gif) -32px -31px no-repeat; 
+}
+
+a#next:hover {
+	background:url(arrow.gif) -32px 0 no-repeat;
+}
+
+.clear {clear:both}
