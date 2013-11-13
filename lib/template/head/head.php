@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link href="CSS/template.css" rel="stylesheet" type="text/css">

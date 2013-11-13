@@ -20,6 +20,8 @@ a:hover{
 
 hr{
 	background-color: #dbdbdb;
+	color: #dbdbdb;
+	border: 1px solid #dbdbdb;
 }
 
 li{
@@ -142,6 +144,7 @@ nav{
 	padding-top:15px;
 	font-size:30px;
 	color:#dfdfeb;
+	z-index: 1;
 }
 
 .socialMedia{
@@ -274,4 +277,12 @@ a#next:hover {
 #message{
 	width:300px;
 	height:300px;
+}
+
+#emailForm input{
+	font-weight:bold;
+}
+
+#emailForm textarea{
+	font-weight:bold;
 }

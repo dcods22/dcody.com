@@ -8,10 +8,7 @@
 			<div id="buttons">
 				<a href="#" id="prev">prev</a>
 				<a href="#" id="next">next</a>
-				<div class="clear"></div>
 			</div>
-			
-			<div class="clear"></div>
 
 			<div id="slides"> 
 				<ul>
@@ -21,7 +18,6 @@
 					<li><img src="images/me.jpg" width="240" height="240" alt="Slide 4"/></li>
 					<li><img src="images/me4.jpg" width="240" height="240" alt="Slide 5"/></li>
 				</ul>
-				<div class="clear"></div>
 			</div>
 
 		</div>
