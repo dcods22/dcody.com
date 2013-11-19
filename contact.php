@@ -11,6 +11,10 @@
 		var subjecttotal = 0;
 		var messagetotal = 0;
 	</script>
+	<h3>Contact Information</h3>
+	<b>Email:</b> Daniel.Cody2@Marist.edu<br/><br/>
+	<b>Phone:</b> (631) 365-9940
+	
 	<h3>Contact Form</h3>
 	<form action="scripts/php/email.php" method="POST" id='emailForm'>  
 		
