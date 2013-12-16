@@ -14,7 +14,7 @@ $(document).ready(function () {
 		var value = $( this ).val();
 		if(value=='')
 		{
-			$( this ).css( "background-color", "#ff6666" );
+			$( this ).css( "border-color", "#ff6666" );
 			if(nametotal > 0){
 				formtotal--;
 				nametotal = 0;
@@ -24,7 +24,7 @@ $(document).ready(function () {
 				formtotal++;
 				nametotal = 1;
 			}
-			$( this ).css( "background-color", "#9AFF9A" );
+			$( this ).css( "border-color", "#9AFF9A" );
 		}
 	});
 });
@@ -34,7 +34,7 @@ $(document).ready(function () {
 		var value = $( this ).val();
 		if(validateEmail(value) == false)
 		{
-			$( this ).css( "background-color", "#ff6666" );
+			$( this ).css( "border-color", "#ff6666" );
 			if(emailtotal > 0){
 				formtotal--;
 				emailtotal = 0;
@@ -44,7 +44,7 @@ $(document).ready(function () {
 				formtotal++;
 				emailtotal = 1;
 			}
-			$( this ).css( "background-color", "#9AFF9A" );
+			$( this ).css( "border-color", "#9AFF9A" );
 		}
 	});
 });
@@ -54,7 +54,7 @@ $(document).ready(function () {
 		var value = $( this ).val();
 		if(value=='')
 		{
-			$( this ).css( "background-color", "#ff6666" );
+			$( this ).css( "border-color", "#ff6666" );
 			if(subjecttotal > 0){
 				formtotal--;
 				subjecttotal = 0;
@@ -64,7 +64,7 @@ $(document).ready(function () {
 				formtotal++;
 				subjecttotal = 1;
 			}
-			$( this ).css( "background-color", "#9AFF9A" );
+			$( this ).css( "border-color", "#9AFF9A" );
 		}
 	});
 });
@@ -74,7 +74,7 @@ $(document).ready(function () {
 		var value = $( this ).val();
 		if(value=='')
 		{
-			$( this ).css( "background-color", "#ff6666" );
+			$( this ).css( "border-color", "#ff6666" );
 			if(messagetotal > 0){
 				formtotal--;
 				messagetotal = 0;
@@ -84,7 +84,7 @@ $(document).ready(function () {
 				formtotal++;
 				messagetotal = 1;
 			}
-			$( this ).css( "background-color", "#9AFF9A" );
+			$( this ).css( "border-color", "#9AFF9A" );
 		}
 	});
 });
