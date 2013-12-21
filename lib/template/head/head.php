@@ -9,7 +9,7 @@
 		<script src="scripts/jquery-ui.js"></script>
 		<script src="scripts/accordian.js"></script>		
 		<script type="text/javascript" src="scripts/carousel/js/infinitecarousel.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="scripts/angular/angular.js"></script>
 		<title>Dan Cody</title>
 	</head>

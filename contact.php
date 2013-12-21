@@ -9,9 +9,11 @@
 		var subjecttotal = 0;
 		var messagetotal = 0;
 		
-		angular.filter('newlines', function(text){
-			return text.replace(/\n/g, '<br/>');  
-		});	
+		App.filter('newlines', function() {
+		  return function(text) {
+			return text.split(/\n/g);
+		  };
+		});
 	</script>
 	<h3>Contact Information</h3>
 	<b>Email:</b> Daniel.Cody2@Marist.edu<br/><br/>
@@ -31,10 +33,10 @@
 		<div class='emailPrevFont'>
 			<b>From:</b> {{emailForm}}<br/>
 			<b>Subject:</b> {{subjectForm}}<br/>
-			<b>Message:</b><br/><pre> {{messageForm}}  </pre>
+			<b>Message:</b><br/> <pre>{{messageForm}} </pre>
 			
 			Sincerely,<br/>
-			{{nameForm}}
+			<pre>     {{nameForm}}</pre>
 		</div>
 	</div>
 	<br/><br/>
