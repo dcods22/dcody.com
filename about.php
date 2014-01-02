@@ -8,22 +8,9 @@
 		
 		skills = ['Java', 'HTML5', 'CSS3', 'PHP', 'MySQL', 'JavaScript', 'C++', 'jQuery', 'AngularJS', 'Git', 'z/OS', 'Mainframe', 'REXX', 'TSO', 'ISPF', 'IPCS', 'SML', 'Assembly', 'Mac OS', 'Windows OS', 'Linux', 'IOS'];
 		
-		interests = ['Sports',
-			'Beach',
-			'Reading',
-			'Working Out'];
+		interests = ['Sports', 'Beach', 'Reading', 'Working Out'];
 	
-		activities = [
-			'Circle K Society',
-			'Computer Society',
-			'Security Club',
-			'Campus Ministry',
-			'Intramurals',
-			'Soccer',
-			'Baseball',
-			'Basketball',
-			'Hockey'
-		]
+		activities = ['Circle K Society', 'Computer Society', 'Security Club', 'Campus Ministry', 'Intramurals', 'Soccer', 'Baseball', 'Basketball', 'Hockey'];
 	
 		"></div>
 		<ul>
