@@ -1,8 +1,7 @@
 <?php
 	include('lib/template/head.php');
-?>
-	<h3>Honors:</h3>	
-		<div ng-init="
+?> 
+	<div ng-init=" 
 		
 		honors = ['Eagle Scout from Boy Scouts of America', '150+ Hours Community Service', 'DECA All Long Island Award Winner in Marketing Mathematics (2011)', 'All League Athlete: Soccer, and Baseball', 'Varsity Captain of Soccer: 09, 10', 'Varsity Captain of Baseball: 11'];
 		
@@ -12,24 +11,27 @@
 	
 		activities = ['Circle K Society', 'Computer Society', 'Security Club', 'Campus Ministry', 'Intramurals', 'Soccer', 'Baseball', 'Basketball', 'Hockey'];
 	
-		"></div>
-		<ul>
-			<li ng-repeat="honors in honors">{{honors}}</li>
+		">
+	</div>
+
+	<h3>Honors:</h3>	
+		<ul class='subjectHolder'>
+			<li ng-repeat="honors in honors" class='aboutSubject'>{{honors}}</li>
 		</ul>
-		   
+		
 	<h3>Skills:</h3>
-		<ul>
-			<li ng-repeat="skills in skills">{{skills}}</li>
+		<ul class='subjectHolder'>
+			<li ng-repeat="skills in skills" class='aboutSubject'>{{skills}}</li>
 		</ul>
 	   
 	<h3>Interests:</h3>	
-		<ul>
-			<li ng-repeat="interests in interests">{{interests}}</li>
+		<ul class='subjectHolder'>
+			<li ng-repeat="interests in interests" class='aboutSubject'>{{interests}}</li>
 		</ul>
 			
 	<h3>Activities:</h3>
-		<ul>
-		    <li ng-repeat="activities in activities">{{activities}}</li>
+		<ul class='subjectHolder'>
+		    <li ng-repeat="activities in activities" class='aboutSubject'>{{activities}}</li>
 		</ul>
 
 <?php
