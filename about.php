@@ -4,16 +4,9 @@
 	
 	<div ng-init=" 
 		
-		friends = [{name:'John', phone:'555-1276'},
-                             {name:'Mary', phone:'800-BIG-MARY'},
-                             {name:'Mike', phone:'555-4321'},
-                             {name:'Adam', phone:'555-5678'},
-                             {name:'Julie', phone:'555-8765'},
-                             {name:'Juliette', phone:'555-5678'}];
-		
 		honors = [{name:'Eagle Scout from Boy Scouts of America'}, {name:'150+ Hours Community Service'}, {name:'DECA All Long Island Award Winner in Marketing Mathematics (2011)'}, {name:'All League Athlete: Soccer, and Baseball'}, {name:'Varsity Captain of Soccer: 09, 10'}, {name:'Varsity Captain of Baseball: 11'}];
 		
-		skills = ['Java', 'HTML5', 'CSS3', 'PHP', 'MySQL', 'JavaScript', 'C++', 'jQuery', 'AngularJS', 'Git', 'z/OS', 'Mainframe', 'REXX', 'TSO', 'ISPF', 'IPCS', 'SML', 'Assembly', 'Mac OS', 'Windows OS', 'Linux', 'IOS'];
+		skills = ['Java', 'HTML5', 'CSS3', 'PHP', 'MySQL', 'JavaScript', 'AngularJS ', 'C++', 'jQuery', 'AngularJS', 'Git', 'z/OS', 'Mainframe', 'REXX', 'TSO', 'ISPF', 'IPCS', 'SML', 'Assembly', 'Mac OS', 'Windows OS', 'Linux', 'IOS'];
 		
 		interests = ['Sports', 'Beach', 'Reading', 'Working Out'];
 	
@@ -21,8 +14,8 @@
 	
 		">
 	</div>
-
-	<input type='text' name='search' class='searchAbout' ng-model='search' placeholder='Search About Me' />
+	<br/>
+	<div class='searchBar'>Search: <input type='text' name='search' class='searchAbout' ng-model='search' placeholder='Search About Me' /></div>
 	
 	<h3>Honors:</h3>	
 		<ul class='subjectHolder'>

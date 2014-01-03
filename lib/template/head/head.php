@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
 	<head>
-		<meta charset="utf-8"/>
+		<meta name="description" content="Daniel Cody's Personal Website"> 
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<link href="CSS/template.css" rel="stylesheet" type="text/css"/>
 		<link rel="shortcut icon" href="images/favicon.ico"/>
 		<link rel="icon" href="images/favicon.ico"/>
