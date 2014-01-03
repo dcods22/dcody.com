@@ -308,3 +308,24 @@ a#next:hover {
 	height:auto;
 	padding: 5px 5px 5px 5px;
 }
+
+.subjectHolder{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+.aboutSubject{
+	float:left;
+	padding-right:20px;
+	padding-bottom:20px;
+	width:300px;
+	height:40px;
+	overflow:hidden;
+}
+
+.searchAbout{
+	width:200px;
+	border-radius:10px;
+	padding-left:10px;
+}
