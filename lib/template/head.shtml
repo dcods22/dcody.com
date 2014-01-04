@@ -9,7 +9,8 @@
 		<script type="text/javascript" src="scripts/accordian.js"></script>		
 		<script type="text/javascript" src="scripts/carousel/js/infinitecarousel.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/angular/angular.js"></script>
 		<title>Dan Cody</title>
 	</head>
 	
-	<div ng-include="'lib/template/nav.html'"></div>
+	<!--#include virtual="nav.html" -->

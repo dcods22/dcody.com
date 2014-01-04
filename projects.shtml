@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
 	
-	<script type="text/javascript" src="scripts/angular/angular.js"></script>
-	
-	<div ng-include="'lib/template/head.html'"></div>
+	<!--#include virtual="lib/template/head.shtml" -->
 
 	<ul>
 		<li><h3><a href="http://campusloops.com">Campus Loops</a></h4></li>
@@ -18,4 +16,4 @@
 		
 	</ul>
 				
-	<div ng-include="'lib/template/footer.html'"></div>
+	<!--#include virtual="lib/template/footer.html" -->

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
 	
-	<script type="text/javascript" src="scripts/angular/angular.js"></script>
-	
-	<div ng-include="'lib/template/head.html'"></div>
+	<!--#include virtual="lib/template/head.shtml" -->
 
 		<p> Here is a downloadable, better formatted file of my Resume: <a href = "Resume.docx">Click Here</a></p>
 		
@@ -114,4 +112,4 @@
 
 		</p>
 	   
-	<div ng-include="'lib/template/footer.html'"></div>
+	<!--#include virtual="lib/template/footer.html" -->
