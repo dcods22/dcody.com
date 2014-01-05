@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" data-ng-app="resumeController">
 	
-	<!--#include virtual="lib/template/head.shtml" -->
+	<?php
+		include('lib/template/head.php');
+	?>
+		
+		<div data-ng-controller='ResumeController'>
+	
+		<script src='scripts/javascript/resumeController.js' type='text/javascript'></script>
 
+	
 		<p> Here is a downloadable, better formatted file of my Resume: <a href = "Resume.docx">Click Here</a></p>
 		
 		<p>
@@ -11,19 +18,23 @@
 		
 			<center>43 Watson Avenue, West Babylon, New York 11704 : Daniel.Cody2@Marist.edu  :	631-365- 9940 </center><br/>
 
-			<hr>	
+			<hr>
+
 			<strong>EDUCATION</strong><br/>
-		
-			<u>Marist College, School of Computer Science and Mathematics	 Poughkeepsie, NY</u><br/>
-			Bachelor of Science in Computer Science, Minor in Information Technology 	Expected Graduation: May 2015
-			<br/>Major GPA: 3.41/4.00; Cumulative GPA: 3.21/4.00<br/>
-
+			<div ng-repeat="edu in education">
+			
+				<u>{{edu.name}}</u><br/>
+				{{edu.info}}
+				<br/>{{edu.gpa}}<br/>
+				
+			</div>
+			
 			<br/><hr><strong>SKILLS</strong><br/>
-			<u>Relevant Classes:</u>
-			<br/>    Computer Science I & II, Web Programming I & II, Language Study, C++ Programming, Assembly Language Programming, IT\ITS Concepts, Logic Design, Data Communications, Advanced Data Structures, Enterprise Computing
-			<br/><br/><u>Technical Skills:</u>
-			<br/>	Experienced with Windows, Linux, Mac, and IOS Operating Systems; Knowledge in Java, HTML5 , CSS3, PHP, MySQL, Mainframe, C++, jQuery, JavaScript, AJAX, Git, z/OS, ISPF, TSO, IPCS, XML, SML, REXX and Assembly Language	
-
+			
+			<div ng-repeat="skill in skills">
+				<u>{{skill.name}}</u>
+				<br/>{{skill.info}}<br/>
+			</div>
 
 			<br/><hr><strong>RELEVANT EXPERIENCE</strong><br/>
 			<u>IBM Level 2 z/OS Co-op	Poughkeepsie, NY
@@ -104,12 +115,13 @@
 			<br/>	Be a sense of support to other team members and promote an environment of the team learning from each other 
 			<br/>
 
-
+			
 			<br/><hr><strong>HONORS AND ACHIEVEMENTS</strong><br/>
-				Eagle Scout Award Recipient: Highest achievement in Boy Scouts of America
-			<br/>	DECA All Long Island Award Winner in Marketing Mathematics (2011)
-			<br/>	Community Service +150 Hours Annually: Boy Scout events, Good Samaritan Hospital, American Legion Post 94
-
+			<div ng-repeat="honor in honors">
+				<strong>{{honor.name}}</strong> {{honor.info}}<br/>
+			</div>
 		</p>
 	   
-	<!--#include virtual="lib/template/footer.html" -->
+	<?php
+		include('lib/template/footer.html');
+	?>

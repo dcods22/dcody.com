@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
 	
-	<!--#include virtual="lib/template/head.shtml" -->
+	<?php
+		include('lib/template/head.php');
+	?>
 	
 	<script type="text/javascript" src='scripts/javascript/slideshow.js'></script>
 	
@@ -45,4 +47,6 @@
 			
 	<p>
 
-	<!--#include virtual="lib/template/footer.html" -->
+	<?php
+		include('lib/template/footer.html');
+	?>

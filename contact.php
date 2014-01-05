@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
 	
-	<!--#include virtual="lib/template/head.shtml" -->
+	<?php
+		include('lib/template/head.php');
+	?>
 	
 	<script src='scripts/javascript/validate.js' type="text/javascript"></script>	
 	<script>
@@ -43,4 +45,6 @@
 	</div>
 	<br/><br/>
 
-	<!--#include virtual="lib/template/footer.html" -->
+	<?php
+		include('lib/template/footer.html');
+	?>

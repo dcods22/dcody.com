@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" data-ng-app="aboutController">
 	
-	<!--#include virtual="lib/template/head.shtml" -->
-
+	<?php
+		include('lib/template/head.php');
+	?>
+	
 	<div data-ng-controller='AboutController'>
 	
 	<script src='scripts/javascript/aboutController.js' type='text/javascript'></script>
@@ -31,4 +33,6 @@
 		</ul>
 	</div>
 
-	<!--#include virtual="lib/template/footer.html" -->
+	<?php
+		include('lib/template/footer.html');
+	?>

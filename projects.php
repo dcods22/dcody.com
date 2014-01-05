@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
 	
-	<!--#include virtual="lib/template/head.shtml" -->
-
+	<?php
+		include('lib/template/head.php');
+	?>
+	
 	<ul>
 		<li><h3><a href="http://campusloops.com">Campus Loops</a></h4></li>
 		Start up website and company created by myself.  Social Media website designed to connect all people on a college campus 
@@ -16,4 +18,6 @@
 		
 	</ul>
 				
-	<!--#include virtual="lib/template/footer.html" -->
+	<?php
+		include('lib/template/footer.html');
+	?>

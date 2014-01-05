@@ -270,14 +270,11 @@ nav{
 .footerContainer{
 	height:auto;
 	width:auto;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
+	padding-right: 20px;
 }
 
 .copy{
-	padding-top:100px;
+	padding-top:80px;
 	float:right;
 }
 
