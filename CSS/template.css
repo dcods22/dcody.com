@@ -430,3 +430,14 @@ a#next:hover {
 	overflow:margin;
 	font-weight:bold;
 }
+
+.experience {
+	padding-top:5px;
+}
+
+.resName{
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	float:center;
+}
