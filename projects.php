@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" data-ng-app="projectsController">
 	
 	<?php
 		include('lib/template/head.php');
 	?>
 	
-	<ul>
-		<li><h3><a href="http://campusloops.com">Campus Loops</a></h4></li>
-		Start up website and company created by myself.  Social Media website designed to connect all people on a college campus 
-		
-		<li><h3><a href="http://collegecrux.com">College Crux</a></h4></li>
-		Start up website and company created by myself and a classmate.  Goal is to put all college information on one site to help kids looking to attend college research about colleges.  
+	<div data-ng-controller='ProjectsController'>
+	
+	<script src='scripts/javascript/projectsController.js' type='text/javascript'></script>
 
-		<li><h3><a href="http://foxweb.marist.edu/users/kgdjc/Wer/">Wildlife Ecology Research</a></h4></li>
-		This is my website that I re-designed for my web programming class.  We took a working website for a company and re-designed to and submitted 
-		our finished products to the company.
-		
+	<ul>
+		<div ng-repeat="project in projects" class="project">
+			<a href="{{project.link}}"><img src="{{project.image}}" alt={{project.name}} class="projectsPic"/><h3>{{project.name}}</a></h3></li>
+			{{project.desc}}
+		</div>
 	</ul>
 				
 	<?php

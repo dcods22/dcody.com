@@ -16,11 +16,11 @@
 
 			<div id="slides"> 
 				<ul>
-					<li><img src="images/me3.jpg" width="240" height="240" alt="Slide 1"/></li>
-					<li><img src="images/me1.jpg" width="240" height="240" alt="Slide 2"/></li>
+					<li><img src="images/me1.jpg" width="240" height="240" alt="Slide 1"/></li>
+					<li><img src="images/me3.jpg" width="240" height="240" alt="Slide 2"/></li>
 					<li><img src="images/me2.jpg" width="240" height="240" alt="Slide 3"/></li>
-					<li><img src="images/me.jpg" width="240" height="240" alt="Slide 4"/></li>
-					<li><img src="images/me4.jpg" width="240" height="240" alt="Slide 5"/></li>
+					<li><img src="images/me4jpg" width="240" height="240" alt="Slide 4"/></li>
+					<li><img src="images/me.jpg" width="240" height="240" alt="Slide 5"/></li>
 				</ul>
 			</div>
 
