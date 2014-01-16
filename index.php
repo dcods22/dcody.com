@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" data-ng-app="indexController">
 	
 	<?php
 		include('lib/template/head.php');
 	?>
 	
 	<script type="text/javascript" src='scripts/javascript/slideshow.js'></script>
+	
+	<div data-ng-controller='IndexController'>
+	
+	<script src='scripts/javascript/indexController.js' type='text/javascript'></script>
+
 	
 	<center>
 		<div id="carousel">
@@ -28,25 +33,16 @@
 	</center>
 	
 	<h2>Bio: </h2>
-	<p>
 	
-		I student at Marist College, where I am currently studying Computer Science and minoring in Information Technology. <br/><br/>
-		I grew up on Long Island where I love to play sports, go to the beach and hang out with my friends. <br/><br/>
-		I currently work on campus at Resnet as a computer technician; where I install networking software as well as fix viruses and hardware issues.<br/><br/>
-		I worked this past summer at IBM Level 2 z/OS support.  Where I write, maintain, and update REXX, Java, and Lotus tools to help with debugging on the mainframe.  <br/><br/>
-		You can learn more about me in the About Me tab.
-			
-	<p>
-
+		<div ng-repeat="bio in bios" class="bios">
+			{{bio.desc}}
+		</div>
 	<h2>Career Goals: </h2>
-	<p>
-	
-		I am currently a Junior at Marist College, where I am trying to obtain an internship in a technical field or a business where I can learn the way a business is run from the bottom up.<br/><br/>
-		I have taken a lot of technical classes and I also have learned a lot on my own. <br/><br/>
-		You can find a copy of my resume on the Resume tab.  
-			
-	<p>
 
+		<div ng-repeat="goal in goals" class="goals">
+			{{goal.desc}}
+		</div>
+		
 	<?php
 		include('lib/template/footer.html');
 	?>

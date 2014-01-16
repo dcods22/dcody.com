@@ -9,6 +9,10 @@ html, body{
 	padding:0;
 }
 
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+
 a{
 	text-decoration:none;
 	color:#000;
@@ -440,4 +444,31 @@ a#next:hover {
 	font-weight:bold;
 	font-size:20px;
 	float:center;
+}
+
+.project{
+	width:850px;
+	height:auto;
+	margin-bottom:50px;
+}
+
+.projectsPic{
+	float:left;
+	height:80px;
+	width:80px;
+	padding-right:20px;
+}
+
+.goals{
+	width:850px;
+	height:auto;
+	font-size:18px;
+	margin-bottom:10px;
+}
+
+.bios{
+	width:850px;
+	height:auto;
+	font-size:18px;
+	margin-bottom:10px;
 }
