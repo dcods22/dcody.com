@@ -1,0 +1,277 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover{
+	color:#1b1bc2;
+}	
+
+hr{
+	background-color: #dbdbdb;
+	color: #dbdbdb;
+	border: 1px solid #dbdbdb;
+}
+
+li{
+	text-decoration:none;
+	display:block;
+}
+
+.center { margin: 0 auto; }
+.content{ 
+	margin: 0 auto; 
+	width: 960px;
+	color: #000;
+	font-size:20px;
+}
+
+.clear { clear: both; }
+a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+
+#header { 
+	width: 100%; 
+	background: url('images/header-bg.png'); 
+	height: 80px; 	
+	position: fixed;
+}
+
+#nav { 
+	width: 410px; 
+	float: right; 
+	margin-top: 20px; 
+}
+
+#logo a { 
+	color: #fff; 
+	text-decoration: none; 
+	float: left; 
+	font-size: 30px; 
+	margin-top: 20px; 
+	color: #fff; 
+	font-family:"Wellfleet"; 
+	font-weight: bold; 
+}
+
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;	
+}
+
+#nav li{
+	margin-top: 9px;	
+	float: left;
+	padding-left: 21px;
+}
+
+#nav li a { 
+	color: #fff; 
+	opacity:0.6; 
+	font-size: 16px; 
+	text-decoration: none; 
+	font-family: 'Wellfleet'; 
+}
+
+#nav li a.active { 
+	color: #fff; 
+	opacity:1; 
+	border-bottom: 2px solid #fff; 
+}
+
+#nav li a:hover { 
+	color: #fff; 
+	opacity:1;  
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5{ 
+	width: 100%; 
+}
+
+#slide1{
+	background:url('images/background.png') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+
+#slide2{
+	background-color: #fff;
+	color: #333333;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 100px 0 100px 0;
+}
+
+#slide3{
+	background: url('images/background1.png') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 1000px;
+	padding: 100px 0 400px  0;
+	margin: 0 auto;
+	background-size: cover;
+}
+
+#slide4{
+	background-color: #fff;
+	color: #333333;
+	height: 650px;
+	padding: 80px 0 100px 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#slide5{
+	background: url('images/background2.png') 50% 0 no-repeat fixed;
+	height: 900px;
+	padding: 70px 0 100px 0;
+	margin: 0 auto;
+	color: #fff;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/******** Welcome ********/
+.title{
+	font-weight:bold;
+	font-size:25px;
+	COlor:#000;
+	margin-top:10px;
+	margin-bottom:5px;
+	text-decoration:underline;
+}
+
+.bios{
+	font-size:20px;
+	color:#000;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.goals{
+	font-size:20px;
+	color:#000;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+/************ About ***********/
+.subjectHolder{
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+.aboutSubject{
+	float:left;
+	padding-right:15px;
+	padding-bottom:15px;
+	width:300px;
+	height:35px;
+	overflow:hidden;
+}
+
+.searchAbout{
+	width:200px;
+	border-radius:10px;
+	padding-left:10px;
+	margin-left:10px;
+}
+
+.searchBar{
+	text-align:center;
+	overflow:margin;
+	font-weight:bold;
+}
+
+.skillTitle{
+	font-size:20px;
+	font-weight:bold;
+}
+
+/*********** Projects **********/
+
+.project{
+	width:850px;
+	height:auto;
+	margin-bottom:50px;
+	font-size:20px;
+	color:#000;
+}
+
+.projectsPic{
+	float:left;
+	height:80px;
+	width:80px;
+	padding-right:20px;
+}
+
+/*********** Contact **********/
+#nameForm{
+	width:300px;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+#email{
+	width:300px;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+#subject{
+	width:300px;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+#message{
+	width:300px;
+	height:300px;
+}
+
+#emailForm{
+	width:400px;
+	float:left;
+	overflow:hidden;
+}
+
+#emailForm input{
+	font-weight:bold;
+}
+
+#emailForm textarea{
+	font-weight:bold;
+}
+
+.emailPrev{
+	overflow:hidden;
+	width:400px;
+	min-height:450px;
+	height:100%;
+	border:1px solid #000;
+	border-radius:10px;
+	background:#C8C8C8;
+}
+
+.emailPrevFont{
+	width:auto;
+	height:auto;
+	padding: 5px 5px 5px 5px;
+}
+
