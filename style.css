@@ -328,6 +328,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 
 #emailForm textarea{
 	font-weight:bold;
+	border-color: grey;
 }
 
 .emailPrev{
