@@ -2,7 +2,7 @@
 <html lang="en" data-ng-app="parallaxController">
   <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Parallax Website</title>
+		<title>Daniel Cody</title>
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="javascript/scroll.js"></script>
 		<script type="text/javascript" src="javascript/jquery-1.10.2.min.js"></script>
@@ -23,9 +23,7 @@
 
 		<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
 				 $(this).click(function() {
-					$("#nav li a").removeClass("active");
-					$(this).addClass('active');
-				   $('html, body').animate({scrollTop: targetOffset}, 1000);
+				   $('html, body').animate({scrollTop: targetOffset}, 1500);
 				   return false;
 				 });
 			  }
@@ -33,8 +31,125 @@
 		  });
 
 		});
+	
+		$( document ).ready(function() {
+			$("#header .content").fadeIn(1500);
+			$("#slide1 .content").fadeIn(1500);
+			$("#slide2 .content").fadeIn(1500);
+			$("#slide3 .content").fadeIn(1500);
+			$("#slide4 .content").fadeIn(1500);
+			$("#slide5 .content").fadeIn(1500);
+			
+			var loc = $(document).scrollTop();	
+			/*Changing of the nav*/
+			if(loc < 670){
+				$("#s1").addClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 670 && loc < 1190){
+				$("#s1").removeClass("active");
+				$("#s2").addClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 1190 && loc < 2762){
+				$("#s1").removeClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").addClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 2752 && loc < 3588){
+				$("#s1").removeClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").addClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 3578){
+				$("#s1").removeClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").addClass("active");
+			}
+		});
+		
+		$( window ).scroll(function(){
+		
+			var loc = $(document).scrollTop();				
+			
+			/*Changing of the nav*/
+			if(loc < 670){
+				$("#s1").addClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 670 && loc < 1160){
+				$("#s1").removeClass("active");
+				$("#s2").addClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 1160 && loc < 2722){
+				$("#s1").removeClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").addClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 2722 && loc < 3568){
+				$("#s1").removeClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").addClass("active");
+				$("#s5").removeClass("active");
+			}
+			else if(loc > 3568){
+				$("#s1").removeClass("active");
+				$("#s2").removeClass("active");
+				$("#s3").removeClass("active");
+				$("#s4").removeClass("active");
+				$("#s5").addClass("active");
+			}
+		});
+		
+		/*// Cache selectors
+		var topMenu = $("#nav"),
+			topMenuHeight = topMenu.outerHeight()+50,
+			// All list items
+			menuItems = topMenu.find("a"),
+			// Anchors corresponding to menu items
+			scrollItems = menuItems.map(function(){
+			  var item = $($(this).attr("href"));
+			  if (item.length) { return item; }
+			});
 
+		// Bind to scroll
+		$(window).scroll(function(){
+		   // Get container scroll position
+		   var fromTop = $(this).scrollTop()+topMenuHeight;
 
+		   // Get id of current scroll item
+		   var cur = scrollItems.map(function(){
+			 if ($(this).offset().top < fromTop)
+			   return this;
+		   });
+		   // Get the id of the current element
+		   cur = cur[cur.length-1];
+		   var id = cur && cur.length ? cur[0].id : "";
+		   // Set/remove active class
+		   menuItems
+			 .parent().removeClass("active")
+			 .end().filter("[href=#slide"+id+"]").parent().addClass("active");
+		});​*/
 		</script>
 
 
@@ -46,15 +161,15 @@
 
 	<header id="header">
 		<div class="content">
-		<div id="logo"><a href="">Daniel Cody </a></div>
+		<div id="logo"><a href="#slide1">Daniel Cody </a></div>
 
 			<nav id="nav">
 				<ul>
-					<li><a href="#slide1" class="active" title="Next Section" >Welcome</a></li>
-					<li><a href="#slide2" title="Next Section">Resume</a></li>
-					<li><a href="#slide3" title="Next Section">Skills</a></li>
-					<li><a  href="#slide4" title="Next Section">Contact</a></li>
-					<li><a href="#slide5" title="Next Section">Projects</a></li>
+					<li><a href="#slide1" id="s1" class="active" title="Next Section" >Welcome</a></li>
+					<li><a href="#slide2" id="s2" title="Next Section">Resume</a></li>
+					<li><a href="#slide3" id="s3" title="Next Section">About Me</a></li>
+					<li><a  href="#slide4" id="s4" title="Next Section">Contact</a></li>
+					<li><a href="#slide5" id="s5" title="Next Section">Projects</a></li>
 				</ul>
 			</nav>
 		
@@ -63,14 +178,16 @@
 		
 	<div id="slide1">
 		<div class="content">
+		
+			<span class='welcome'>Welcome to my personal website, scroll through, get to know me</span><br/><br/>
 			<span class="title">Bio:</span>
 			<div ng-repeat="bio in bios" class="bios">
 				{{bio.desc}}
 			</div>
 			<br/>
-			<span class="title">Goals:</span>
-			<div ng-repeat="goal in goals" class="goals">
-				{{goal.desc}}
+			<span class="title">Technology:</span>
+			<div ng-repeat="tech in technology" class="goals">
+				{{tech.desc}}
 			</div>
 		</div> 
 	</div> 
@@ -134,6 +251,7 @@
 				  };
 				});
 			</script>
+			<center>
 			<span class="title">Contact Information</span><br/><br/>
 			<b>Email:</b> Daniel.Cody2@Marist.edu<br/><br/>
 			<b>Phone:</b> (631) 365-9940<br/><br/>
@@ -147,18 +265,7 @@
 				<input type="submit" onclick="validate()" = "send" value="Send" /><input type="reset" value="Clear" />
 				  
 			</form>
-			
-			<div class='emailPrev'>
-				<div class='emailPrevFont'>
-					<b>From:</b> {{emailForm}}<br/>
-					<b>Subject:</b> {{subjectForm}}<br/>
-					<b>Message:</b><br/> <pre>{{messageForm}} </pre>
-					
-					Sincerely,<br/>
-					<pre>     {{nameForm}}</pre>
-				</div>
-			</div>
-			<br/><br/>	
+			</center>	
 		</div> 
 	</div> 
 		
@@ -175,5 +282,15 @@
 		</div> 
 	</div> 
 
+	<div id="slide6">
+		<div class="content">
+			<footer class='footer'>
+				<div class='footerContainer'>
+					<div class='copy'>&copy; Daniel Cody.  All rights reserved.</div>
+				</div><!--end of footerContainer-->
+			</footer>
+
+		</div>
+	</div>
 </body>
 </html>

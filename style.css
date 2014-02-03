@@ -5,7 +5,11 @@ html, body{
 }
 
 body{
-	font-family: "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3{
+	text-shadow: 2px 0px 3px rgba(150, 150, 150, 1);
 }
 
 a{
@@ -28,12 +32,41 @@ li{
 	display:block;
 }
 
+input[type='reset'], input[type='submit']{
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top, #fff, #ededed);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	display: inline-block;
+	zoom: 1;
+	vertical-align: baseline;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+
 .center { margin: 0 auto; }
 .content{ 
 	margin: 0 auto; 
 	width: 960px;
 	color: #000;
 	font-size:20px;
+	display:none;
 }
 
 .clear { clear: both; }
@@ -45,10 +78,17 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	background: url('images/header-bg.png'); 
 	height: 80px; 	
 	position: fixed;
+	border-bottom:1px solid #474747;
+	opacity:1;
+	z-index:1;
+}
+
+#header:hover{
+	opacity:1;
 }
 
 #nav { 
-	width: 410px; 
+	width: 510px; 
 	float: right; 
 	margin-top: 20px; 
 }
@@ -60,8 +100,9 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	font-size: 30px; 
 	margin-top: 20px; 
 	color: #fff; 
-	font-family:"Wellfleet"; 
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: bold; 
+	text-shadow: 3px 0px 5px rgba(150, 150, 150, 1);
 }
 
 #nav ul{
@@ -80,7 +121,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 #nav li a { 
 	color: #fff; 
 	opacity:0.6; 
-	font-size: 16px; 
+	font-size: 20px; 
 	text-decoration: none; 
 	font-family: 'Wellfleet'; 
 }
@@ -101,15 +142,17 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 }
 
 #slide1{
-	background:url('images/background.png') 50% 0 no-repeat fixed;
+	background:url('images/background.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
-	height: 600px;
+	height: 300px;
 	margin: 0;
-	padding: 200px 0 260px 0;
+	padding: 150px 0 310px 0;
 	background-size: cover;
 }
 
 #slide2{
+	border-top:1px solid #474747;
+	border-bottom:1px solid #474747;
 	background-color: #fff;
 	color: #333333;
 	height: 300px;
@@ -119,7 +162,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 }
 
 #slide3{
-	background: url('images/background1.png') 50% 0 no-repeat fixed;
+	background: url('images/background1.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 1000px;
 	padding: 100px 0 400px  0;
@@ -128,6 +171,8 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 }
 
 #slide4{
+	border-top:1px solid #474747;
+	border-bottom:1px solid #474747;
 	background-color: #fff;
 	color: #333333;
 	height: 650px;
@@ -137,7 +182,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 }
 
 #slide5{
-	background: url('images/background2.png') 50% 0 no-repeat fixed;
+	background: url('images/background2.jpg') 50% 0 no-repeat fixed;
 	height: 900px;
 	padding: 70px 0 100px 0;
 	margin: 0 auto;
@@ -146,7 +191,23 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	overflow: hidden;
 }
 
+#slide6{
+	//border-top:1px solid #474747;
+	//border-bottom:1px solid #474747;
+	//background-color: #fff;
+	color: #333333;
+	height: 30px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
 /******** Welcome ********/
+.welcome{
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	margin:auto auto auto auto;
+}
 .title{
 	font-weight:bold;
 	font-size:25px;
@@ -154,6 +215,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	margin-top:10px;
 	margin-bottom:5px;
 	text-decoration:underline;
+	text-shadow: 2px 0px 3px rgba(150, 150, 150, 1);
 }
 
 .bios{
@@ -211,44 +273,53 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	height:auto;
 	margin-bottom:50px;
 	font-size:20px;
-	color:#000;
+	color:#136094;
 }
 
 .projectsPic{
 	float:left;
 	height:80px;
 	width:80px;
-	padding-right:20px;
+	margin-right:20px;
+	border:1px solid #474747;
+	-webkit-box-shadow: 8px 4px 13px 0px rgba(50, 50, 48, 0.58);
+	-moz-box-shadow:    8px 4px 13px 0px rgba(50, 50, 48, 0.58);
+	box-shadow:         8px 4px 13px 0px rgba(50, 50, 48, 0.58);
 }
 
 /*********** Contact **********/
 #nameForm{
-	width:300px;
+	width:600px;
 	border-radius:10px;
 	padding-left:10px;
+	margin:auto auto auto auto;
 }
 
 #email{
-	width:300px;
+	width:600px;
 	border-radius:10px;
 	padding-left:10px;
+	margin:auto auto auto auto;
 }
 
 #subject{
-	width:300px;
+	width:600px;
 	border-radius:10px;
 	padding-left:10px;
+	margin:auto auto auto auto;
 }
 
 #message{
-	width:300px;
+	width:600px;
 	height:300px;
+	margin:auto auto auto auto;
 }
 
 #emailForm{
-	width:400px;
+	width:800px;
 	float:left;
 	overflow:hidden;
+	margin-left:100px;
 }
 
 #emailForm input{
@@ -275,3 +346,11 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	padding: 5px 5px 5px 5px;
 }
 
+
+/********** Footer ***********/
+.copy{
+	font-style:italic;
+	text-align:center;
+	margin: auto auto auto auto;
+	padding-top:4px;
+}

@@ -4,75 +4,42 @@ parallaxController.controller('ParallaxController', function ParallaxController(
 	
 	$scope.bios = [
 		{
-			desc: "I student at Marist College, where I am currently studying Computer Science and minoring in Information Technology.",
+			desc: "I currently am a junior at Marist College, where I study Computer Science with a minor in Information Technology.",
 		},
 		
 		{
-			desc: "I grew up on Long Island where I love to play sports, go to the beach and hang out with my friends. ",
+			desc: "I'm From Long Island, where I grew up playing sports, going to the beach and hanging out with my friends. ",
 		},
 		
 		{
-			desc: "I currently work on campus at Resnet as a computer technician; where I install networking software as well as fix viruses and hardware issues.",
+			desc: "Currently I work on campus at Resnet as a computer technician; where I install networking software as well as fix viruses and hardware issues.",
 		},
 		
 		{
-			desc: "I worked this past summer at IBM Level 2 z/OS support.  Where I write, maintain, and update REXX, Java, and Lotus tools to help with debugging on the mainframe.",
+			desc: "I worked this past summer at IBM Level 2 z/OS support, where I write, maintain, and update REXX, Java, and Lotus tools to help with debugging on the mainframe.",
 		},
 		
 		{
-			desc: "You can learn more about me in the About Me tab.",
+			desc: "Learn more about my skills in the About Me Section",
 		},
 	];
 
-	$scope.goals = [
+	$scope.technology = [
 		{
-			desc: "I am currently a Junior at Marist College, where I am trying to obtain an internship in a technical field or a business where I can learn the way a business is run from the bottom up.",
+			desc: "This website is coded in HTML5, CSS3, AngularJS, jQuery",
 		},
 		
 		{
-			desc: "I have taken a lot of technical classes and I also have learned a lot on my own. ",
+			desc: "I mostly do Java, but I have interests in web development as well as Mobile Development ",
 		},
 			
 		{
-			desc: "You can find a copy of my resume on the Resume tab.",
+			desc: "You can see all my skills and languages in the About Me Section",
 		},
 	];
 	
 	$scope.projects = [
-		
-		{
-			image: "images/campusloops.png",
-			
-			link: "http://campusloops.com",
-			
-			name: "Campus Loops",
-			
-			desc: "Start up website and company created by myself and two classmates.  Social Media website designed to connect all people on a college campus ",
-		
-		},
-
-		{
-			image: "images/collegecrux.png",
-			
-			link: "http://collegecrux.com",
-			
-			name: "College Crux",
-			
-			desc: "Start up website and company created by myself and a classmate.  Goal is to put all college information on one site to help kids looking to attend college research about colleges.",
-		
-		},	
-
-		{
-			image: "images/wer.png",
-			
-			link: "http://foxweb.marist.edu/users/kgdjc/Wer/",
-			
-			name: "Wildlife Ecology Research",
-			
-			desc: "This is my website that I re-designed for my web programming class.  We took a working website for a company and re-designed to and submitted our finished products to the company.",
-		
-		},		
-
+	
 		{
 			image: "images/website.png",
 			
@@ -105,11 +72,45 @@ parallaxController.controller('ParallaxController', function ParallaxController(
 			desc: "A parallax website I made from the template of the previous website I did for my cousins.",
 		
 		},
+		
+		{
+			image: "images/campusloops.png",
+			
+			link: "http://campusloops.com",
+			
+			name: "Campus Loops",
+			
+			desc: "Start up website and company created by myself and two classmates.  Social Media website designed to connect all people on a college campus ",
+		
+		},
+
+		{
+			image: "images/collegecrux.png",
+			
+			link: "http://collegecrux.com",
+			
+			name: "College Crux",
+			
+			desc: "Start up website and company created by a classmate and I.  The goal is to put all college info on one site to help kids looking to attend college research about colleges.",
+		
+		},	
+
+		{
+			image: "images/wer.png",
+			
+			link: "http://foxweb.marist.edu/users/kgdjc/Wer/",
+			
+			name: "Wildlife Ecology Research",
+			
+			desc: "A website that I re-designed for my web programming 1 class. Goal was to redesign look and layout for the company.",
+		
+		},		
+
 	];
 	
 	$scope.honors = [{name:'Eagle Scout from Boy Scouts of America'}, {name:'150+ Hours Community Service'}, {name:'DECA All Long Island Award Winner'}, {name:'All League Athlete: Soccer, and Baseball'}, {name:'Varsity Captain of Soccer: 09, 10'}, {name:'Varsity Captain of Baseball: 11'}];
 		
-	$scope.skills = ['Java', 'HTML5', 'CSS3', 'PHP', 'MySQL', 'JavaScript', 'AngularJS ', 'C++', 'jQuery', 'Git', 'z/OS', 'Mainframe', 'REXX', 'TSO', 'ISPF', 'IPCS', 'SML', 'Assembly', 'Mac OS', 'Windows OS', 'Linux', 'IOS'];
+	$scope.skills = ['Java', 'HTML5', 'CSS3', 'PHP', 'MySQL', 'JavaScript', 'AngularJS ', 'C++', 'jQuery', 'Git', 'z/OS', 'Mainframe', 'REXX', 'TSO', 'ISPF', 'IPCS', 'SML', 'TCP/IP', 'Assembly', 'Mac OS', 'Windows OS', 'Linux', 'IOS'];
 		
 	$scope.interests = ['Sports', 'Beach', 'Reading', 'Working Out'];
 	
