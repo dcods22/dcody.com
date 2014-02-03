@@ -26,7 +26,7 @@ parallaxController.controller('ParallaxController', function ParallaxController(
 
 	$scope.technology = [
 		{
-			desc: "This website is coded in HTML5, CSS3, AngularJS, jQuery",
+			desc: "This website is coded in HTML5, CSS3, AngularJS, and jQuery",
 		},
 		
 		{
