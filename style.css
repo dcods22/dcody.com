@@ -6,10 +6,12 @@ html, body{
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	color:#000;
 }
 
 h3{
 	text-shadow: 2px 0px 3px rgba(150, 150, 150, 1);
+	color:#fff;
 }
 
 a{
@@ -64,9 +66,16 @@ input[type='reset'], input[type='submit']{
 .content{ 
 	margin: 0 auto; 
 	width: 960px;
-	color: #000;
 	font-size:20px;
 	display:none;
+}
+
+.white{
+	color:#fff;
+}
+
+.black{
+	color:#000;
 }
 
 .clear { clear: both; }
@@ -154,7 +163,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	border-top:1px solid #474747;
 	border-bottom:1px solid #474747;
 	background-color: #fff;
-	color: #333333;
+	color: #000;
 	height: 300px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -208,10 +217,10 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	text-align:center;
 	margin:auto auto auto auto;
 }
+
 .title{
 	font-weight:bold;
 	font-size:25px;
-	COlor:#000;
 	margin-top:10px;
 	margin-bottom:5px;
 	text-decoration:underline;
@@ -220,14 +229,14 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 
 .bios{
 	font-size:20px;
-	color:#000;
+	color:#fff;
 	margin-bottom:5px;
 	margin-top:5px;
 }
 
 .goals{
 	font-size:20px;
-	color:#000;
+	color:#fff;
 	margin-bottom:5px;
 	margin-top:5px;
 }
@@ -244,7 +253,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	padding-right:15px;
 	padding-bottom:15px;
 	width:300px;
-	height:35px;
+	height:30px;
 	overflow:hidden;
 }
 
@@ -273,7 +282,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	height:auto;
 	margin-bottom:50px;
 	font-size:20px;
-	color:#136094;
+	color:#fff;
 }
 
 .projectsPic{
@@ -328,7 +337,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 
 #emailForm textarea{
 	font-weight:bold;
-	border-color: grey;
+	border-color: gray;
 }
 
 .emailPrev{
