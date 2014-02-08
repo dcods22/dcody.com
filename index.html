@@ -2,6 +2,7 @@
 <html lang="en" data-ng-app="parallaxController">
   <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Daniel Cody's Personal Website" />
 		<title>Daniel Cody</title>
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<link rel="shortcut icon" href="images/favicon.ico"/>
@@ -21,7 +22,7 @@
 			  var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
 			  var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
 			   if ($target) {
-				 var targetOffset = $target.offset().top;
+				 var targetOffset = $target.offset().top - 80;
 
 		<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
 				 $(this).click(function() {
@@ -42,38 +43,47 @@
 			$("#slide4 .content").fadeIn(1500);
 			$("#slide5 .content").fadeIn(1500);
 			$("#slide6 .content").fadeIn(1500);
+			$("body").animate({
+				//font-size: 20px,
+			});
 			
 			var loc = $(document).scrollTop();	
+			var s1Top = $("#slide1").position().top - 90;
+			var s2Top = $("#slide2").position().top - 90;
+			var s3Top = $("#slide3").position().top - 90;
+			var s4Top = $("#slide4").position().top - 90;
+			var s5Top = $("#slide5").position().top - 90;
+
 			/*Changing of the nav*/
-			if(loc < 670){
+			if(loc < s2Top){
 				$("#s1").addClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").removeClass("active");
 				$("#s4").removeClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 670 && loc < 1190){
+			else if(loc > s2Top && loc < s3Top){
 				$("#s1").removeClass("active");
 				$("#s2").addClass("active");
 				$("#s3").removeClass("active");
 				$("#s4").removeClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 1190 && loc < 2762){
+			else if(loc > s3Top && loc < s4Top){
 				$("#s1").removeClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").addClass("active");
 				$("#s4").removeClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 2752 && loc < 3588){
+			else if(loc > s4Top && loc < s5Top){
 				$("#s1").removeClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").removeClass("active");
 				$("#s4").addClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 3578){
+			else if(loc > s5Top){
 				$("#s1").removeClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").removeClass("active");
@@ -84,38 +94,42 @@
 		
 		$( window ).scroll(function(){
 		
-			var loc = $(document).scrollTop();				
-			
+			var loc = $(document).scrollTop();
+			var s1Top = $("#slide1").position().top - 90;
+			var s2Top = $("#slide2").position().top - 90;
+			var s3Top = $("#slide3").position().top - 90;
+			var s4Top = $("#slide4").position().top - 90;
+			var s5Top = $("#slide5").position().top - 90;	
 			/*Changing of the nav*/
-			if(loc < 670){
+			if(loc < s2Top){
 				$("#s1").addClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").removeClass("active");
 				$("#s4").removeClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 670 && loc < 1160){
+			else if(loc > s2Top && loc < s3Top){
 				$("#s1").removeClass("active");
 				$("#s2").addClass("active");
 				$("#s3").removeClass("active");
 				$("#s4").removeClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 1160 && loc < 2722){
+			else if(loc > s3Top && loc < s4Top){
 				$("#s1").removeClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").addClass("active");
 				$("#s4").removeClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 2722 && loc < 3568){
+			else if(loc > s4Top && loc < s5Top){
 				$("#s1").removeClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").removeClass("active");
 				$("#s4").addClass("active");
 				$("#s5").removeClass("active");
 			}
-			else if(loc > 3568){
+			else if(loc > s5Top){
 				$("#s1").removeClass("active");
 				$("#s2").removeClass("active");
 				$("#s3").removeClass("active");

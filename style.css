@@ -155,7 +155,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	color: #fff;
 	height: 300px;
 	margin: 0;
-	padding: 150px 0 310px 0;
+	padding: 150px 0 320px 0;
 	background-size: cover;
 }
 
@@ -167,14 +167,14 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	height: 300px;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 100px 0 100px 0;
+	padding: 50px 0 50px 0;
 }
 
 #slide3{
 	background: url('images/background1.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 1000px;
-	padding: 100px 0 400px  0;
+	padding: 50px 0 400px  0;
 	margin: 0 auto;
 	background-size: cover;
 }
@@ -185,7 +185,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	background-color: #fff;
 	color: #333333;
 	height: 650px;
-	padding: 80px 0 100px 0;
+	padding: 30px 0 100px 0;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -193,7 +193,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 #slide5{
 	background: url('images/background2.jpg') 50% 0 no-repeat fixed;
 	height: 900px;
-	padding: 70px 0 100px 0;
+	padding: 50px 0 100px 0;
 	margin: 0 auto;
 	color: #fff;
 	background-size: cover;
