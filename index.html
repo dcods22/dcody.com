@@ -4,143 +4,15 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Daniel Cody's Personal Website" />
 		<title>Daniel Cody</title>
-		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
 		<link rel="shortcut icon" href="images/favicon.ico"/>
 		<link rel="icon" href="images/favicon.ico"/>
-		<script type="text/javascript" src="javascript/scroll.js"></script>
 		<script type="text/javascript" src="javascript/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="javascript/angular/angular.js"></script>
-		<script type="text/javascript" src="javascript/parallaxController.js" ></script>
-		<script>
-		   
-		<!----- JQUERY FOR SLIDING NAVIGATION --->   
-		$(document).ready(function() {
-		  $('a[href*=#]').each(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-			&& location.hostname == this.hostname
-			&& this.hash.replace(/#/,'') ) {
-			  var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-			  var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-			   if ($target) {
-				 var targetOffset = $target.offset().top - 80;
-
-		<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-				 $(this).click(function() {
-				   $('html, body').animate({scrollTop: targetOffset}, 1500);
-				   return false;
-				 });
-			  }
-			}
-		  });
-
-		});
-	
-		$( document ).ready(function() {
-			$("#header .content").fadeIn(1500);
-			$("#slide1 .content").fadeIn(1500);
-			$("#slide2 .content").fadeIn(1500);
-			$("#slide3 .content").fadeIn(1500);
-			$("#slide4 .content").fadeIn(1500);
-			$("#slide5 .content").fadeIn(1500);
-			$("#slide6 .content").fadeIn(1500);
-			$("body").animate({
-				//font-size: 20px,
-			});
-			
-			var loc = $(document).scrollTop();	
-			var s1Top = $("#slide1").position().top - 90;
-			var s2Top = $("#slide2").position().top - 90;
-			var s3Top = $("#slide3").position().top - 90;
-			var s4Top = $("#slide4").position().top - 90;
-			var s5Top = $("#slide5").position().top - 90;
-
-			/*Changing of the nav*/
-			if(loc < s2Top){
-				$("#s1").addClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s2Top && loc < s3Top){
-				$("#s1").removeClass("active");
-				$("#s2").addClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s3Top && loc < s4Top){
-				$("#s1").removeClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").addClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s4Top && loc < s5Top){
-				$("#s1").removeClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").addClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s5Top){
-				$("#s1").removeClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").addClass("active");
-			}
-		});
-		
-		$( window ).scroll(function(){
-		
-			var loc = $(document).scrollTop();
-			var s1Top = $("#slide1").position().top - 90;
-			var s2Top = $("#slide2").position().top - 90;
-			var s3Top = $("#slide3").position().top - 90;
-			var s4Top = $("#slide4").position().top - 90;
-			var s5Top = $("#slide5").position().top - 90;	
-			/*Changing of the nav*/
-			if(loc < s2Top){
-				$("#s1").addClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s2Top && loc < s3Top){
-				$("#s1").removeClass("active");
-				$("#s2").addClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s3Top && loc < s4Top){
-				$("#s1").removeClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").addClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s4Top && loc < s5Top){
-				$("#s1").removeClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").addClass("active");
-				$("#s5").removeClass("active");
-			}
-			else if(loc > s5Top){
-				$("#s1").removeClass("active");
-				$("#s2").removeClass("active");
-				$("#s3").removeClass("active");
-				$("#s4").removeClass("active");
-				$("#s5").addClass("active");
-			}
-		});
-		
-		</script>
-
-
+		<script type="text/javascript" src="javascript/parallaxController.js"></script>
+		<script type="text/javascript" src="javascript/nav.js"></script>
+		<script type="text/javascript" src="javascript/loader.js"></script>
+		<script type="text/javascript" src="javascript/scroll.js"></script>
  </head> 
 	
 <body>
@@ -156,7 +28,7 @@
 					<li><a href="#slide1" id="s1" class="active" title="Next Section" >Welcome</a></li>
 					<li><a href="#slide2" id="s2" title="Next Section">Resume</a></li>
 					<li><a href="#slide3" id="s3" title="Next Section">About Me</a></li>
-					<li><a  href="#slide4" id="s4" title="Next Section">Contact</a></li>
+					<li><a href="#slide4" id="s4" title="Next Section">Contact</a></li>
 					<li><a href="#slide5" id="s5" title="Next Section">Projects</a></li>
 				</ul>
 			</nav>
@@ -185,10 +57,11 @@
 			<div ng-repeat="resumes in resume" class="resume">
 				{{resumes.about}}<a href="#slide5">Here</a><br/><br/>
 				{{resumes.name}} <br/><br/>
-				<a href="{{resumes.pdf}}">PDF</a><br/><br/>
-				<a href="{{resumes.word}}">Word</a><br/><br/>
-				<a href="{{resumes.github}}"><img src="{{resumes.git}}" alt="GitHub" height="40px" width="40px"/></a>
-				<a href="{{resumes.linkedin}}"><img src="{{resumes.linked}}" alt="LinkedIn" height="40px" width="40px"/></a><br/><br/>
+				<a href="{{resumes.github}}"><img src="{{resumes.git}}" alt="GitHub" height="40px" width="40px" class="github"/></a>
+				<a href="{{resumes.linkedin}}"><img src="{{resumes.linked}}" alt="LinkedIn" height="40px" width="40px" class="linkedin"/></a>
+				<a href="{{resumes.pdf}}" class="pdf">PDF</a>
+				<a href="{{resumes.word}}" class="word">Word</a>
+				<br/><br/>
 				{{resumes.desc}} <a href="#slide4">Here</a>
 			</div>
 		</div> 
@@ -244,11 +117,12 @@
 			<b>Email:</b> Daniel.Cody2@Marist.edu<br/><br/>
 			<b>Phone:</b> (631) 365-9940<br/><br/>
 			<span class="title">Contact Form</span><br/><br/>
+			<div class="errorHolder"></div>
 			<form action="php/email.php" method="POST" id='emailForm'> 
 				<input type="text" name="name" id='nameForm' ng-model="nameForm" placeholder='Name'/><br/><br/>
 				<input type="text" name="email" id='email' ng-model="emailForm"placeholder='Email'/><br/><br/>
 				<input type="text" name="subject" id='subject' ng-model="subjectForm"placeholder='Subject'/><br/><br/>
-				<textarea name = "message" id='message' rows = "4" ng-model="messageForm"placeholder='Message'></textarea><br/><br/>
+				<textarea name = "message" id='message' rows = "4" ng-model="messageForm"placeholder='Message'></textarea><br/>
 
 				<input type="submit" onclick="validate()" = "send" value="Send" /><input type="reset" value="Clear" />
 				  

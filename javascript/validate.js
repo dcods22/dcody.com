@@ -1,8 +1,31 @@
 $(document).ready(function () {
 	$("#emailForm").submit(function ( event ) {
-		if(formtotal < 4)
-		{
-			alert("There is an error in your form.  PLease make sure all fields are highlited green");
+		if(nametotal != 1)
+		{	
+			$(".errorHolder").empty();
+			$(".errorHolder").append("There is an with your name.  Please make sure all fields are highlited green.");
+			$("#slide4").css("padding-bottom", 140);
+			event.preventDefault();
+		}
+		else if(emailtotal != 1)
+		{	
+			$(".errorHolder").empty();
+			$(".errorHolder").append("There is an error with your email.  Please make sure all fields are highlited green.");
+			$("#slide4").css("padding-bottom", 140);
+			event.preventDefault();
+		}
+		else if(subjecttotal != 1)
+		{	
+			$(".errorHolder").empty();
+			$(".errorHolder").append("There is an error with your subject.  Please make sure all fields are highlited green.");
+			$("#slide4").css("padding-bottom", 140);
+			event.preventDefault();
+		}
+		else if(messagetotal != 1)
+		{	
+			$(".errorHolder").empty();
+			$(".errorHolder").append("There is with your message.  Please make sure all fields are highlited green.");
+			$("#slide4").css("padding-bottom", 140);
 			event.preventDefault();
 		}
 	});

@@ -8,7 +8,7 @@ parallaxController.controller('ParallaxController', function ParallaxController(
 		},
 		
 		{
-			desc: "I'm From Long Island, where I grew up playing sports, going to the beach and hanging out with my friends. ",
+			desc: "I am from Long Island, where I grew up playing sports, going to the beach and hanging out with my friends. ",
 		},
 		
 		{

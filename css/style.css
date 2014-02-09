@@ -35,32 +35,38 @@ li{
 }
 
 input[type='reset'], input[type='submit']{
-	color: #606060;
-	border: solid 1px #b7b7b7;
-	background: #fff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-	background: -moz-linear-gradient(top, #fff, #ededed);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
-	display: inline-block;
-	zoom: 1;
-	vertical-align: baseline;
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
-	padding: .5em 2em .55em;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em;
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-webkit-border-radius: 2em;
-	-moz-border-radius: 2em;
-	border-radius: 2em;
-}
+   border-top: 1px solid #383838;
+   background: #4f4f4f;
+   background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#4f4f4f));
+   background: -webkit-linear-gradient(top, #999999, #4f4f4f);
+   background: -moz-linear-gradient(top, #999999, #4f4f4f);
+   background: -ms-linear-gradient(top, #999999, #4f4f4f);
+   background: -o-linear-gradient(top, #999999, #4f4f4f);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+input[type='reset']:hover, input[type='submit']:hover {
+   border-top-color: #5c5c5c;
+   background: #5c5c5c;
+   color: #ccc;
+   }
+
+input[type='reset']:active, input[type='submit']:active {
+   border-top-color: #454545;
+   background: #454545;
+   }
 
 .center { margin: 0 auto; }
 .content{ 
@@ -84,7 +90,8 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 
 #header { 
 	width: 100%; 
-	background: url('images/header-bg.png'); 
+	min-width: 960px;
+	background: url('../images/header-bg.png'); 
 	height: 80px; 	
 	position: fixed;
 	border-bottom:1px solid #474747;
@@ -151,7 +158,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 }
 
 #slide1{
-	background:url('images/background.jpg') 50% 0 no-repeat fixed;
+	background:url('../images/background.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 300px;
 	margin: 0;
@@ -164,14 +171,14 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	border-bottom:1px solid #474747;
 	background-color: #fff;
 	color: #000;
-	height: 300px;
+	height: 220px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 50px 0 50px 0;
 }
 
 #slide3{
-	background: url('images/background1.jpg') 50% 0 no-repeat fixed;
+	background: url('../images/background1.jpg') 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 1000px;
 	padding: 50px 0 400px  0;
@@ -182,7 +189,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 #slide4{
 	border-top:1px solid #474747;
 	border-bottom:1px solid #474747;
-	background-color: #fff;
+	background-color: #f0f0f0;
 	color: #333333;
 	height: 650px;
 	padding: 30px 0 100px 0;
@@ -191,22 +198,12 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 }
 
 #slide5{
-	background: url('images/background2.jpg') 50% 0 no-repeat fixed;
+	background: url('../images/background2.jpg') 50% 0 no-repeat fixed;
 	height: 900px;
 	padding: 50px 0 100px 0;
 	margin: 0 auto;
 	color: #fff;
 	background-size: cover;
-	overflow: hidden;
-}
-
-#slide6{
-	//border-top:1px solid #474747;
-	//border-bottom:1px solid #474747;
-	//background-color: #fff;
-	color: #333333;
-	height: 30px;
-	margin: 0 auto;
 	overflow: hidden;
 }
 
@@ -321,7 +318,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 #message{
 	width:600px;
 	height:300px;
-	margin:auto auto auto auto;
+	margin-bottom:10px;
 }
 
 #emailForm{
@@ -354,6 +351,34 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	width:auto;
 	height:auto;
 	padding: 5px 5px 5px 5px;
+}
+
+.errorHolder{
+	font-size:20px;
+	font-weight:bold;
+	color:red;
+	padding-bottom:15px;
+}
+
+/********** Resume ************/
+.github{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.linkedin{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.word{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.pdf{
+	margin-left:10px;
+	margin-right:10px;
 }
 
 
