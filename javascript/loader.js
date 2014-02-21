@@ -48,4 +48,20 @@ $( document ).ready(function() {
 		$("#s4").removeClass("active");
 		$("#s5").addClass("active");
 	}
+
+	if(loc < s2Fade){
+		$("#slide1 .content").fadeIn(1500);
+	}
+	else if(loc > s2Fade && loc < s3Fade){
+      $("#slide2 .content").fadeIn(1500);
+    } 
+    else if(loc > s3Fade && loc < s4Fade){
+      $("#slide3 .content").fadeIn(1500);
+    }
+    else if(loc > s4Fade && loc < s5Fade){
+      $("#slide4 .content").fadeIn(1500);
+    }
+    else if(loc > s5Fade){
+     $("#slide5 .content").fadeIn(1500);
+    }
 });
