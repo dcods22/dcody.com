@@ -3,28 +3,28 @@ $(document).ready(function () {
 		if(nametotal != 1)
 		{	
 			$(".errorHolder").empty();
-			$(".errorHolder").append("There is an with your name.  Please make sure all fields are highlited green.");
+			$(".errorHolder").append("There is an with your name.  Please make sure all fields are highlited green.").show('slow');
 			$("#slide4").css("padding-bottom", 140);
 			event.preventDefault();
 		}
 		else if(emailtotal != 1)
 		{	
 			$(".errorHolder").empty();
-			$(".errorHolder").append("There is an error with your email.  Please make sure all fields are highlited green.");
+			$(".errorHolder").append("There is an error with your email.  Please make sure all fields are highlited green.").show('slow');
 			$("#slide4").css("padding-bottom", 140);
 			event.preventDefault();
 		}
 		else if(subjecttotal != 1)
 		{	
 			$(".errorHolder").empty();
-			$(".errorHolder").append("There is an error with your subject.  Please make sure all fields are highlited green.");
+			$(".errorHolder").append("There is an error with your subject.  Please make sure all fields are highlited green.").show('slow');
 			$("#slide4").css("padding-bottom", 140);
 			event.preventDefault();
 		}
 		else if(messagetotal != 1)
 		{	
 			$(".errorHolder").empty();
-			$(".errorHolder").append("There is with your message.  Please make sure all fields are highlited green.");
+			$(".errorHolder").append("There is with your message.  Please make sure all fields are highlited green.").show('slow');
 			$("#slide4").css("padding-bottom", 140);
 			event.preventDefault();
 		}

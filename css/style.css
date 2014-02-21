@@ -20,7 +20,7 @@ a{
 }
 
 a:hover{
-	color:#1b1bc2;
+	//color:#1b1bc2;
 }	
 
 hr{
@@ -149,8 +149,8 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 }
 
 #nav li a:hover { 
-	color: #fff; 
-	opacity:1;  
+	//color: #fff; 
+	//opacity:1;  
 }
 
 #slide1, #slide2, #slide3, #slide4, #slide5{ 
@@ -213,6 +213,7 @@ a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellflee
 	font-weight:bold;
 	text-align:center;
 	margin:auto auto auto auto;
+	color: #fff;
 }
 
 .title{
