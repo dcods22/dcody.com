@@ -11,6 +11,11 @@ $( document ).ready(function() {
 	var s4Top = $("#slide4").position().top - 90;
 	var s5Top = $("#slide5").position().top - 90;
 
+	var s2Fade = $("#slide2").position().top - 290;
+    var s3Fade = $("#slide3").position().top - 290;
+    var s4Fade = $("#slide4").position().top - 290;
+    var s5Fade = $("#slide5").position().top - 290;
+
 	/*Changing of the nav*/
 	if(loc < s2Top){
 		$("#s1").addClass("active");
@@ -52,15 +57,15 @@ $( document ).ready(function() {
 		$("#slide1 .content").fadeIn(1500);
 	}
 	else if(loc > s2Fade && loc < s3Fade){
-      $("#slide2 .content").fadeIn(1500);
+      	$("#slide2 .content").fadeIn(1500);
     } 
     else if(loc > s3Fade && loc < s4Fade){
-      $("#slide3 .content").fadeIn(1500);
+     	 $("#slide3 .content").fadeIn(1500);
     }
     else if(loc > s4Fade && loc < s5Fade){
-      $("#slide4 .content").fadeIn(1500);
+      	$("#slide4 .content").fadeIn(1500);
     }
     else if(loc > s5Fade){
-     $("#slide5 .content").fadeIn(1500);
+     	$("#slide5 .content").fadeIn(1500);
     }
 });
