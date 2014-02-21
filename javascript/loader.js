@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 	$("#header .content").fadeIn(1500);
-	$("#slide1 .content").fadeIn(1500);
 	$("body").animate({
 		//font-size: 20px,
 	});
